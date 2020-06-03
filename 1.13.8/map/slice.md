@@ -19,18 +19,14 @@ type slice struct {
 ```go
 // 第一种创建：
 var a = new([]int)
-	||
-	||
-	\/
+	
 func newobject(typ *_type) unsafe.Pointer {
     return mallocgc(typ.size, typ, true)
 }
 
 // 第二种创建：
 var a = make([]int, 10, 20)
-	||
-	||
-	\/
+	
 func makeslice(et *_type, len, cap int) unsafe.Pointer {
     // 计算申请的内存大小 以及 是否溢出
 	mem, overflow := math.MulUintptr(et.size, uintptr(cap))
