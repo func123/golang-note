@@ -369,7 +369,7 @@ func slicestringcopy(to []byte, fm string) int {
 1. [深度解密Go语言之Slice](https://zhuanlan.zhihu.com/p/61121325)
 2. [深度解析 Go 语言中「切片」的三种特殊状态](https://juejin.im/post/5bea58df6fb9a049f153bca8)
 3. [深入解析 Go 中 Slice 底层实现](https://halfrost.com/go_slice/)
-4. [[Go-Questions](https://github.com/changkun/Go-Questions)](https://github.com/changkun/Go-Questions/tree/master/%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87)
+4. [Go-Questions](https://github.com/changkun/Go-Questions/tree/master/%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87)
 
 
 
