@@ -256,7 +256,7 @@ func slicestringcopy(to []byte, fm string) int {
 
 空切片和 nil 切片的区别在于，所有空切片底层的数组指针都指向的一个常量的内存地址，但是它没有分配任何内存空间，即底层元素包含0个元素。
 
-![](https://user-gold-cdn.xitu.io/2018/11/13/1670b6d164141b26?imageslim)
+![](..\..\images\slice_1.png)
 
 不管是 nil 切片还是空切片，对其调用内置函数 append，len 和 cap 的效果都是一样的。但是以下情景中会有区别：
 
