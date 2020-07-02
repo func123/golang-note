@@ -1,10 +1,28 @@
 # channel
 
-​	在并发编程中，多个线程通信的方式一般都是共享变量，而为了正确访问共享变量需要做一些控制（同步原语）。在Go语言中，不仅提供了同步原语这样基础的同步机制，而且还提供了一种不同的并发处理方式——channel。在这种机制中，Go将变量通过channel传递，gorountine通过channel间接获得变量，更关键的是，在任意一个时间点，只能有一个gorountine能通过channel获得变量，在这种情况下gorountine之间不存在共享变量，因此条件竞争从设计上就被杜绝了。
+​	在并发编程中，多个线程通信的方式一般都是共享变量，而为了正确访问共享变量需要做一些控制（同步原语）。在Go语言中，不仅提供了同步原语这样基础的同步机制，而且还提供了一种不同的并发处理方式——channel。在这种机制中，Go将变量通过channel传递，gorountine通过channel间接获得变量，更关键的是，在任意一个时间点，只能有一个gorountine能通过channel获得变量，在这种情况下gorountine之间不需要共享变量，因此条件竞争从设计上就被杜绝了。
 
-​	正如Go官方一句简化后的口号：
+​	Go官方鼓励使用channel去做并发编程，并把它的设计想法简化成了一句话:
 
 > Do not communicate by sharing memory; instead, share memory by communicating.
+
+​	“不要通过共享内存来通信，而要通过通信来实现内存共享”。个人理解：并发编程中不要通过共享变量去做线程间的通信，而是让线程跟channel通信，通过channel传递和接收变量，间接实现线程间的通信。
+
+## CSP
+
+​	channel的设计来源 于Hoare 的通信顺序处理（Communicating sequential processes，CSP）。
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
